@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link href="menu.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        
+<!--        <script type="text/javascript" src="menu-script.js"></script>-->
+        
+        <script>
+            
+            //the function getdropdown makes the dropdown visible when you click on the button
+            $(function(){
+                $("#nav-bar-container").load("menu.html");
+            });
+            
+            function getDropdown(){
+                document.getElementById("dropdown-group").classList.toggle("show");
+            }
+            window.onclick = function(event){
+                if(!event.target.matches("#nav-button")){
+                    var dropdown = document.getElementById("dropdown-group");
+                    if(dropdown.classList.contains('show')){
+                            dropdown.classList.remove('show');   
+                    }
+                }
+            }
+        </script>
+        
+        
+        <style>
+            #content-container{
+                min-height: 400px;
+            }
+            #professional{
+                width:300px;
+                margin: 0 auto;
+            }   
+            h1{
+                
+                max-width: 650px;
+            }
+            @media only screen and (max-width: 1024px){
+                #content-container{
+                    min-height:650px;
+                }
+            }
+        
+        </style>
+    
+    </head>
+    
+    <body>
+        <div id="nav-bar-container">
+            
+            
+        </div>
+        
+        <div class="page-content-container">   
+            <div class="page-content">
+                <div class="page-heading">
+                    <h1>Chuma Okoro - Software Developer</h1>                
+                </div>
+                
+                
+                <div id="content-container">
+                    
+                    <div class="pictures float-left">
+                        <img id="professional" src="professional.png">                  
+                    </div>                    
+                    
+                    <div class="text-section float-right">
+                        <h3>About Me</h3>
+                        
+                        <p>I am an ambitious Nigerian American scholar. Currently, I am in the process of acquiring my B.S in Computer Science at CUNY - Brooklyn College. I am a skilled programmer/web-developer with development experience in multiple languages. In addition to development, I am adept in explaining myself. This is part of why I have had much success in tutoring. Lastly, I have an entrepreneur side to myself. Since I was a teenager, I have taken part in the sneaker market. </p>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div id="content-container">
+                    
+                    <div class="pictures float-left">
+                        <img id="professional" src="code-for-good.png">                  
+                    </div>                    
+                    
+                    <div class="text-section float-right">
+                        <h3>Web & Software Development</h3>
+                        
+                        <p>I have hands on development experience in Java, C++, HTML, CSS, JavaScript, and Python. I have used these languages in the business world, in advanced school projects, at hackathons, and even for personal projects. You can see some of my work in the "Projects" portion of this website. Also, check out this snap from the JP Morgan Hackathon in Delaware (November 2017)!</p>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div id="content-container">
+                    
+                    <div class="pictures float-left">
+                        <img id="professional" src="bsu-kids.png">                  
+                    </div>                    
+                    
+                    <div class="text-section float-right">
+                        <h3>Tutoring</h3>
+                        
+                        <p>Growing up with my 6 siblings under one roof, I have had countless chances to practice explaining myself. This plays a big role on why I have had success working with people. I have always been able to explain a point, whether it be to a large class or one-on-one.</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    
+    
+    </body>
+
+
+</html>
