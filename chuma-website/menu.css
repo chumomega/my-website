@@ -1,12 +1,16 @@
 body, html{
     margin:0;
     padding:0;
+    height:100%;
     background-color: beige;
     font-family: 'Ubuntu', sans-serif;
 }
 .page-content-container{
     background-color: beige;
     width:100%;
+    height:100%;
+    position: relative;
+    height: auto !important;
 }
 .page-content{
     max-width:1000px;
@@ -23,7 +27,7 @@ body, html{
     margin:0 auto;
     vertical-align: middle;
     text-align: center;
-    padding:22px 0px;
+    padding:22px;
 }
 #navigation-links a{
     display: inline;
@@ -35,34 +39,50 @@ body, html{
 
 #nav-dropdown{
     position: relative;
-    display: none;    
+    display: none;
+    float:right;
 }
            
 #nav-button{
     background-color: ghostwhite;
-    border-radius: 1.5px;
-    border:none;
+    border: none;
     position: relative;
     cursor: pointer;
+    width: 400px;
+    height: 250px;
+    border-radius:50px;
+    word-spacing: 50px;
+    font-size: 100px;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
 }
 #nav-button:hover, #nav-button:focus {
     background-color: #2980B9;
 }
 .dropcont{
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 100px;
+    top:200px;
+    background-color: ghostwhite;
+    width: 400px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     display:none;
-    
+    border:none;
+    font-size: 65px;   
+}
+.dropcont a{
+    border:none;
+    text-decoration: none;
+}
+.dropcont a:hover{
+    border-bottom: 1px solid chocolate;
 }
 .show{
     display:block;
 }
 hr{
     border: 2px solid chocolate;
-    margin: 100px 0px;
+    margin: 100px 400px;
 }
 .float-left{
     float:left;
@@ -85,11 +105,41 @@ hr{
     margin: 0 auto;
 }
 h1{
-    border: solid 3px chocolate;
+    border-bottom: solid 3px chocolate;
     font-size: 40px;
     margin: 0 auto;
     margin:150px auto 150px auto;
     padding: 5px;
+}
+.content-container{
+    overflow:hidden;
+}
+.content-group{
+    margin: 0 auto;
+    max-width: 850px;
+    padding: 10px 30px 40px 30px;
+    border-radius: 50px;
+    background-color: #AB9C00;
+    overflow:hidden;
+}
+#footer-container{
+    background-color: chocolate;
+    width:100%;
+    height:75px;
+    position: sticky;
+    margin-top: 150px;
+    bottom: 0px;
+    text-align: center;
+    
+}
+.image{
+    height:100%;
+}
+.image-container{
+    height:40px;
+    max-width: 300px;
+    display: inline-block;
+    margin: 17px 40px
 }
 
 @media only screen and (max-width: 1024px){
@@ -109,6 +159,9 @@ h1{
     .text-section{
         width:100%;
     }
+    #nav-bar-container{
+        height:300px;
+}
     
 }
     

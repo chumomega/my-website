@@ -1,37 +1,35 @@
 <html>
     <head>
+        <title>Chuma's Projects</title>
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <link href="menu.css" rel="stylesheet" type="text/css">
+        
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         
-<!--        <script type="text/javascript" src="menu-script.js"></script>-->
-        
-        <script>
-            
-            //the function getdropdown makes the dropdown visible when you click on the button
-            $(function(){
-                $("#nav-bar-container").load("menu.html");
-            });
-            
-            function getDropdown(){
-                document.getElementById("dropdown-group").classList.toggle("show");
-            }
-            window.onclick = function(event){
-                if(!event.target.matches("#nav-button")){
-                    var dropdown = document.getElementById("dropdown-group");
-                    if(dropdown.classList.contains('show')){
-                            dropdown.classList.remove('show');   
-                    }
-                }
-            }
-        </script>
+        <script type="text/javascript" src="website.js"></script>
         
         <style>
             h1{
                 max-width: 150px;
             }
-            
-        
+            .proj-link{
+                width:150px;
+                background-color: chocolate;
+                color:ghostwhite;
+                font-size:20px;
+                cursor: pointer;   
+                padding: 20px;
+                margin: 10px;
+                float:left;
+                border-radius: 50px;
+                text-align: center;
+            }
+            .projects-container{
+                width: 100%;
+                overflow: hidden;
+                margin-bottom:50px;
+                
+            }
             @media only screen and (max-width: 1024px){
                 
                 
@@ -54,55 +52,71 @@
                 
                 <h1>Projects</h1>
                 
-                
-                <!--<h1>Chuma Okoro - IN DEVELOPMENT</h1>
-                
-                <div id="content-container">
-                    
-                    <div class="pictures float-left">
-                        <img id="professional" src="professional.png">                  
-                    </div>                    
-                    
-                    <div class="text-section float-right">
-                        <h3>About Me</h3>
+                <div class="projects-container">
+                    <div class="content-group">
+                        <h3>Some responsive websites I've created for JobDiva</h3>
                         
-                        <p>I am an ambitious Nigerian American scholar. Currently, I am in the process of acquiring my B.S in Computer Science at CUNY - Brooklyn College. I am a skilled programmer/web-developer with development experience in multiple languages. In addition to development, I am adept in explaining myself. This is part of why I have had much success in tutoring. Lastly, I have an entrepreneur side to myself. Since I was a teenager, I have taken part in the sneaker market. </p>
+                        <div class="links">
+                            <div class="proj-link" onclick="window.location='https://www.jobdiva.com/alternative-to-bullhorn/';">
+                                Landing page for Jobdivas comparison to its competitor
+                            </div>
+                            <div class="proj-link" onclick="window.location='https://www.jobdiva.com/case-study/';">
+                                Landing page for a case study on a client that switched to Jobdiva
+                            </div>    
+                        </div>
                     </div>
                 </div>
                 
                 <hr>
                 
-                <div id="content-container">
-                    
-                    <div class="pictures float-left">
-                        <img id="professional" src="code-for-good.png">                  
-                    </div>                    
-                    
-                    <div class="text-section float-right">
-                        <h3>Web & Software Development</h3>
+                <div class="projects-container">
+                    <div class="content-group">
+                        <h3>Here are some projects I've done and collaborated on in collegiate courses</h3>
                         
-                        <p>I have hands on development experience in Java, C++, HTML, CSS, JavaScript, and Python. I have used these languages in the business world, in advanced school projects, at hackathons, and even for personal projects. You can see some of my work in the "Projects" portion of this website. Also, check out this snap from the JP Morgan Hackathon in Delaware (November 2017)!</p>
+                        <div class="links">
+                            <div class="proj-link" onclick="window.location='https://github.com/CISC3120/project3-dynamite';">
+                                Target Game
+                            </div>
+                            <div class="proj-link" onclick="window.location='https://github.com/chumomega/MyMap';">
+                                C++ Map reimplented using a hash table
+                            </div>
+                            <div class="proj-link" onclick="window.location='https://github.com/chumomega/Hardware-Store';">
+                                Hardware Store Simulator using an object oriented style to control interactions between the various factors (item, shopping cart, etc.)
+                            </div>
+                            <div class="proj-link" onclick="window.location='https://github.com/chumomega/tic-tac-math';">
+                                Tic Tac Math game
+                            </div>
+                        </div>
+                        
+                        
                     </div>
                 </div>
                 
                 <hr>
                 
-                <div id="content-container">
-                    
-                    <div class="pictures float-left">
-                        <img id="professional" src="bsu-kids.png">                  
-                    </div>                    
-                    
-                    <div class="text-section float-right">
-                        <h3>Tutoring</h3>
+                <div class="projects-container">
+                    <div class="content-group">
+                        <h3>Here are some projects I've developed and collaborated on outside of school and paid opportunities</h3>
                         
-                        <p>Growing up with my 6 siblings under one roof, I have had countless chances toprctice explaining myself. This plays a big role on why I have had success working with people. I have always been able to explain a point, whether it be with a large class or one-on-one.</p>
+                        
+                        <div class="links">
+                            <div class="proj-link" onclick="window.location='https://github.com/delaware2017/team-7';">
+                                Hispanic Recognition System - 2nd Place overall @ JP Morgan Hackathon
+                            </div>
+
+                            <div class="proj-link" onclick="window.location='https://github.com/chumomega/my-website';">
+                                This is the source code for this website
+                            </div>
+                        </div>
                     </div>
-                </div>  -->              
+                </div> 
+                
             </div>
         </div>
-    
-    
+        
+        <div id="footer-container">
+                
+        </div>    
     </body>
 
 
