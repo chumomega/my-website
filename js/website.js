@@ -1,11 +1,11 @@
 //the function getdropdown makes the dropdown visible when you click on the button
 
 $(function(){
-    $("#nav-bar-container").load("header.html");
+    $("#nav-bar-container").load("../html/header.html");
 });
 
 $(function(){
-    $("#footer-container").load("footer.html");    
+    $("#footer-container").load("../html/footer.html");    
 });
 
 function getDropdown(){
