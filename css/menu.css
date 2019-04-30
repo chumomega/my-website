@@ -2,11 +2,11 @@ body, html{
     margin:0;
     padding:0;
     height:100%;
-    background-color: beige;
+    background-color: #9EE8FC;
     font-family: 'Ubuntu', sans-serif;
 }
 .page-content-container{
-    background-color: beige;
+    background-color: #9EE8FC;
     width:100%;
     height:100%;
     position: relative;
@@ -18,7 +18,7 @@ body, html{
 }
 
 #nav-bar-container{
-    background-color: chocolate;
+    background-color: #1B4F72;
     width:100%;
     height:75px;
 }
@@ -75,13 +75,13 @@ body, html{
     text-decoration: none;
 }
 .dropcont a:hover{
-    border-bottom: 1px solid chocolate;
+    border-bottom: 1px solid #1B4F72;
 }
 .show{
     display:block;
 }
 hr{
-    border: 2px solid chocolate;
+    border: 2px solid #1B4F72;
     margin: 100px 400px;
 }
 .float-left{
@@ -105,7 +105,7 @@ hr{
     margin: 0 auto;
 }
 h1{
-    border-bottom: solid 3px chocolate;
+    border-bottom: solid 3px #1B4F72;
     font-size: 40px;
     margin: 0 auto;
     margin:150px auto 150px auto;
@@ -119,11 +119,11 @@ h1{
     max-width: 850px;
     padding: 10px 30px 40px 30px;
     border-radius: 50px;
-    background-color: #AB9C00;
+    background-color: #FCF3CF;
     overflow:hidden;
 }
 #footer-container{
-    background-color: chocolate;
+    background-color: #1B4F72;
     width:100%;
     height:75px;
     position: sticky;
