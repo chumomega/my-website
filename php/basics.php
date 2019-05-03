@@ -75,11 +75,23 @@ echo "<br></br>";
 // these are the get variables
 echo "What's good ".$_GET['name']."!" ;
 
+
+echo "<br></br>";
+
+print_r($_POST);
+
+
 ?>
 
 
 <p>What is your name?</p>
 <form>
+    <input name="name" type="text">
+    <input type="submit" value="Enter">
+</form>
+
+<p>Practice for POST requests</p>
+<form method="POST">
     <input name="name" type="text">
     <input type="submit" value="Enter">
 </form>
