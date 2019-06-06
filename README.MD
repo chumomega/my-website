@@ -1,12 +1,5 @@
-# my-website
-This is the open source code for my website. The domain is www.chumaokoro.com
- # my-website
-
 # Personal Website
 ## Developed by Chuma Okoro
-
-
-### This is a personal website developed by Chuma Okoro
 
 ### Technologies
 - Main Languages - HTML, CSS, Javascript
