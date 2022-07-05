@@ -5,7 +5,6 @@
 - Main Languages - HTML, CSS, Javascript
 
 ### How to view app
-1. Go to [chumaokoro.com] (http://chumaokoro.com/) in your web browser
 2. Check it out and please give me feedback
 
 ### Contribution Rules
